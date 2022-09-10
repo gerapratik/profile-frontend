@@ -113,7 +113,7 @@ const EditProfile = (props) => {
               ></Input>
             </InputWrapper>
             <InputWrapper>
-              <Label>IMAGE:</Label>
+              <Label1>IMAGE:</Label1>
               <input
                 
                 type="file"
