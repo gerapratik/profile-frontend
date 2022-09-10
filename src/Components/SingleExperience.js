@@ -141,7 +141,7 @@ const SingleExperience = (props) => {
       <Input
         name="companyname"
         type="text"
-        placeholder="companyname"
+        placeholder="Company Name"
         // id="companylogo"
         value={props.singleExperience.companyname}
         onChange={(e) => props.handleServiceChange(e.target.value, e, props.index)}
@@ -152,20 +152,20 @@ const SingleExperience = (props) => {
       <Input
         name="companylogo"
         type="text"
-        placeholder="companylogo"
+        placeholder="Company Desc"
         // id="companylogo"
         value={props.singleExperience.companylogo}
         onChange={(e) => props.handleServiceChange(e.target.value, e, props.index)}
         required
       />
-      {/* </InputWrapper> */}
+      
 
       <Label1>START DATE *</Label1>
       <Input
         name="startdate"
         type="date"
-        placeholder="startdate"
-        // id="companylogo"
+        placeholder="Start Date"
+        
         value={props.singleExperience.startdate}
         onChange={(e) => {
             if(isValidStartDate(e.target.value)){
@@ -184,10 +184,10 @@ const SingleExperience = (props) => {
       <Input
         name="enddate"
         type="date"
-        placeholder="enddate"
-        // id="companylogo"
+        placeholder="End Date"
+        
         value={props.singleExperience.enddate}
-        // disabled={true}
+        
         onChange={(e) => {
             if(isValidEndDate( e.target.value)){
 
@@ -207,7 +207,6 @@ const SingleExperience = (props) => {
       <Inputcheckbox
         name="current"
         type="checkbox"
-        // placeholder="enddate"
 
 
         checked={props.singleExperience.current}
@@ -224,7 +223,7 @@ const SingleExperience = (props) => {
       <Input
         name="jobtitle"
         type="text"
-        placeholder="jobtitle"
+        placeholder="Job Title"
 
         value={props.singleExperience.jobtitle}
         onChange={(e) => props.handleServiceChange(e.target.value, e, props.index)}
@@ -234,18 +233,14 @@ const SingleExperience = (props) => {
       <Input
         name="jobdesc"
         type="text"
-        placeholder="jobdesc"
+        placeholder="Job Desc"
 
         value={props.singleExperience.jobdesc}
         onChange={(e) => props.handleServiceChange(e.target.value, e, props.index)}
         required
       />
     </InputWrapper>
-    {/* {props.experience.length - 1 === props.index && props.experience.length < 4 && (
-                    <Buttonadd   onClick={props.handleServiceAdd}>
-                      Add Experience
-                    </Buttonadd>
-                  )}  */}
+    
     
   </Container>
 

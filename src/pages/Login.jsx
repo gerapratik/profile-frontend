@@ -145,7 +145,7 @@ const Login = () => {
 
           <Button onClick={() => handleLogin()} disabled={loading} loading={loading}>LOGIN</Button>
 
-          <Hyperlink> CREATE NEW ACCOUNT</Hyperlink>
+          
         
         {error && <div style={{color: 'red'}}>{error}</div>}
         </Form>

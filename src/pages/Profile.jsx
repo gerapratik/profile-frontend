@@ -289,7 +289,7 @@ const Profile = () => {
 
                   {singleExperience.companylogo && (
                     <>
-                      <Label1>COMPANY LOGO</Label1>
+                      <Label1>COMPANY DESC</Label1>
                       <Label>{singleExperience.companylogo}</Label>
                     </>
                   )}
