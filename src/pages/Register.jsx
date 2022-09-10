@@ -105,6 +105,8 @@ const Register = () => {
             setLoading(false);
             setError(err);
           });
+      }else{
+        alert("Please enter valid email")
       }
     } else {
       alert('Please enter valid input')
