@@ -8,63 +8,28 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+			FULL STACK PROFILE APPLICATION
 
-### `npm test`
+REGISTER PAGE:
+When user registers in the application  with following , his/her first name  and last name is captured and saved in the profile collection in Mongodb .
+![image](https://user-images.githubusercontent.com/85092790/189881172-94456263-0e23-43b5-9d1f-3e36118dd330.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+LOGIN PAGE:Only the authorised user can login in the application.
+![image](https://user-images.githubusercontent.com/85092790/189881205-5fdaac09-5074-4e0d-8efc-fd9e67025924.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The email and password are matched with the email and password in the Mongodb collection , only then the user is allowed to login
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+USER PROFILE PAGE: This page displays profile for the user. For each logged in user,  unique saved  profile is getting fetched from mongodb collection
+![image](https://user-images.githubusercontent.com/85092790/189881235-fd205f41-5713-412e-8fba-66bb919ecc4d.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+EDIT PROFILE MODAL : When user clicks on edit profile , user can modify the profiles add , edit experiences.
+a)First and Last Name , Company Name , Start Date, Job Title are required fields
+b) When user selects on current , end date is hidden, 
+c) When user saves the Edit Profile modal , updated profile is stored in Mongodb collection
+![image](https://user-images.githubusercontent.com/85092790/189881260-25a2250e-f66a-462e-90b5-cff3c6c3a4e0.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
